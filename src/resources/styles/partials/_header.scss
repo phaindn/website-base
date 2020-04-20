@@ -1,0 +1,67 @@
+#header {
+  transition: all 0.3s ease;
+  &.sticky {
+    @extend .shadow-blue2;
+    position: sticky;
+    top: 0;
+    background: #fff;
+    z-index: 9000;
+  }
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex: 1;
+  padding: 16px 0;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+
+#nav {
+  margin-left: auto;
+  margin-right: auto;
+  ul > li > a {
+    padding: 6px 12px;
+    margin: auto 12px;
+  }
+}
+
+#try-gempages {
+  padding: 12px 24px;
+  box-shadow: 0px 7px 64px rgba(0, 0, 0, 0.1);
+  color: $cPrimary;
+  background: $neutral6;
+  svg {
+    margin: 0 4px;
+  }
+  // align-items: center;
+  &:hover {
+    color: $neutral5;
+    background: $gradientBlue;
+  }
+}
+
+nav {
+  ul {
+    list-style-type: none;
+  }
+  a {
+    font: inherit;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+    
+    transition: color 0.3s ease;
+    color: inherit;
+    cursor: pointer;
+    &:hover {
+      color: $cPrimary;
+    }
+  }
+}

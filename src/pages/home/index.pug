@@ -1,0 +1,12 @@
+extends ../../layout
+include ../../partials/mixins/seo
+block page-seo
+  +seo('SEO Title', 'SEO Description', 'SEO keywords split by comma', 'SEO Canonical', 'SEO sitename')
+block content
+  //- your content here
+
+  //- Picture should in this form to ensure that it will displayed in any browser
+  picture.learn-img
+    source(srcset=img.src.webp, type="image/webp")
+    source(srcset=img.src.jpg, type="image/jpeg")
+    img.learn-img(src=img.src.webp, alt=img.alt)

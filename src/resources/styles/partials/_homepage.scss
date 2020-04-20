@@ -1,0 +1,235 @@
+#hero {
+  padding-top: 107px;
+  padding-bottom: 107px;
+  .btn-group {
+    .btn {
+      min-width: 180px;
+    }
+    .btn-how {
+      padding: 1px;
+    }
+  }
+  .hero-banner {
+    // width: 100%;
+    // margin-left: 53px;
+    // justify-content: center;
+    margin-right: -72px;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.fluid-banner {
+  position: relative;
+  overflow: hidden;
+  .banner-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+#intro {
+  .info {
+    // padding: 28px;
+  }
+  img {
+    width: 100%;
+  }
+}
+
+#templates {
+  margin-top: 107px;
+  margin-bottom: 40px;
+  .verticle-center {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
+#tryit {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  .verticle-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+#top-features {
+  
+}
+
+#any-section {
+  >.fluid-banner {
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
+}
+
+#showcase {
+  padding-top: 150px;
+  padding-bottom: 80px;
+}
+
+#reviews {
+  padding-bottom: 74px;
+}
+
+#premium-support {
+  padding-top: 181px;
+  padding-bottom: 171px;
+  .verticle-center {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
+#features-first {
+  padding-top: 149px;
+  padding-bottom: 147px;
+  align-items: center;
+}
+
+#features-second {
+  padding-top: 107px;
+  padding-bottom: 117px;
+  align-items: center;
+
+  .section {
+    padding: 0 51px 16px 51px;
+  }
+}
+
+#features-third {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+#features-fourth {
+  padding-top: 107px;
+  padding-bottom: 93px;
+  align-items: center;
+
+  .section {
+    padding: 0 51px 16px 51px;
+  }
+}
+
+.term-popup {
+  display: none;
+  position: fixed;
+  z-index: 99999999999999;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(0,0,0,.3);
+  justify-content: center;
+  
+  align-items: center;
+  &.active {
+    display: flex;
+  }
+  &-body {
+    padding: 40px 60px;
+    background: #fff;
+    // border-radius: 5px;
+    border-radius: 0px 0px 0px 10px;
+    box-shadow: 0 0 20px 1px rgba(0,0,0,.16);
+    flex-direction: column;
+    position: relative;
+    // min-width: 800px;
+    color: #333;
+    display: flex;
+    align-items: center;
+    .scrollBody {
+      max-height: 65vh;
+      overflow: auto;
+    }
+    main {
+      background: $neutralGrey;
+      padding: 33px 40px;
+      section {
+        p:first-of-type {
+          text-indent: 2.5rem;
+        }
+        p {
+          margin-bottom: 2rem;
+        }
+        ol {
+          margin-left: 2.5rem;
+        }
+      }
+    }
+    footer {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-box-pack: end;
+      -ms-flex-pack: end;
+      justify-content: flex-end;
+      margin-top: 30px;
+      width: 100%;
+      button {
+        margin: 10px;
+      }
+    }
+    .term-popup-close {
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 24px;
+      transition: all .2s ease;
+      padding: 10px;
+      border-radius: 50%;
+      &:hover {
+        background: #f2f4f6;
+        color: #0060e5;
+      }
+    }
+  }
+}
+.btn-exit {
+  background: #fff;
+  -webkit-box-shadow: 0 8px 19px rgba(4,91,171,.1);
+  box-shadow: 0 8px 19px rgba(4,91,171,.1);
+  padding: 11px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+  cursor: pointer;
+  &:hover {
+    box-shadow: 0 8px 20px rgba(4,91,171,.3);
+  }
+}

@@ -1,0 +1,320 @@
+.typo {
+  // Inherit from new dashboard
+  &-h1,
+  &-h2,
+  &-h3,
+  &-h4,
+  &-title1,
+  &-title2 {
+    font-weight: 600;
+  }
+
+  &-h1 {
+    font-size: 40px;
+    line-height: 60px;
+  }
+
+  &-h2 {
+    font-size: 32px;
+    line-height: 48px;
+  }
+
+  &-h3 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  &-h4 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  &-h5 {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: normal;
+  }
+
+  &-h6 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  &-headline {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 140%;
+  }
+
+  &-title1 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  &-title2 {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  &-body1 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  &-subtext {
+    font-style: italic;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  &-body2 {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 21px;
+  }
+
+  &-body3 {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  &-body4 {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  &-web-p {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  &-small {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: normal;
+  }
+
+  &-tiny {
+    font-size: 11px;
+    line-height: 16px;
+    font-weight: normal;
+  }
+
+  // New website style
+  &-light {
+    font-weight: 300;
+  }
+
+  &-regular {
+    font-weight: 400;
+  }
+
+  &-semibold {
+    font-weight: 600;
+  }
+
+  &-bold {
+    font-weight: bold;
+  }
+
+  &-para14 {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  &-para16 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  &-title24 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  &-headline36 {
+    font-size: 36px;
+    line-height: 120%;
+  }
+
+  &-headline40 {
+    font-size: 40px;
+    line-height: 140%;
+  }
+}
+
+.style {
+  &-normal {
+    font-style: normal;
+  }
+  &-italic {
+    font-style: italic;
+  }
+}
+
+.text {
+  &-darkblue {
+    color: $cSecondary4;
+  }
+}
+
+.text {
+  &-danger {
+    color: $cRed !important;
+  }
+
+  &-primary {
+    color: $cPrimary !important;
+  }
+
+  &-warning {
+    color: $cYellow;
+  }
+
+  &-success {
+    color: $cGreen !important;
+  }
+
+  &-info {
+    color: $cTeal !important;
+  }
+
+  &-light {
+    color: #fff !important;
+  }
+
+  &-purple {
+    color: $cPurple !important;
+  }
+
+  &-g-primary {
+    background: $gradientBlue;
+
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+  }
+
+  &-g-grey {
+    background: $gradientGrey;
+
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+  }
+
+  &-g-info {
+    background: $gradientCyan;
+
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+  }
+
+  &-g-purple {
+    background: $gradientPurple;
+
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+  }
+
+  &-g-violet {
+    background: $gradientViolet;
+
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+  }
+
+  &-center {
+    text-align: center !important;
+  }
+
+  &-left {
+    text-align: left !important;
+  }
+
+  &-right {
+    text-align: right !important;
+  }
+
+  &-secondary4 {
+    color: $cSecondary4;
+  }
+
+  &-secondary3 {
+    color: $cSecondary3;
+  }
+
+  &-red {
+    color: $accentRed;
+  }
+
+  &-grey2 {
+    color: $grey2;
+  }
+
+  &-grey4 {
+    color: $grey4;
+  }
+
+  &-shade6 {
+    color: $shade6;
+  }
+
+  &-black1 {
+    color: $black1 !important;
+  }
+}
+
+.weight {
+  &-300 {
+    font-weight: 300 !important;
+  }
+
+  &-400 {
+    font-weight: 400 !important;
+  }
+
+  &-500 {
+    font-weight: 500 !important;
+  }
+
+  &-600 {
+    font-weight: 600 !important;
+  }
+
+  &-700 {
+    font-weight: 700 !important;
+  }
+
+  &-800 {
+    font-weight: 800 !important;
+  }
+}
+
+.lh {
+  &-130 {
+    line-height: 130%;
+  }
+  &-100 {
+    line-height: 100%;
+  }
+}
+
+.h {
+  &-100 {
+    height: 100%;
+  }
+}

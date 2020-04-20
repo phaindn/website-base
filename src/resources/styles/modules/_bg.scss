@@ -1,0 +1,89 @@
+.bg {
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: right;
+
+  &-danger {
+    background-color: $cRed !important;
+  }
+
+  &-primary {
+    background-color: $cPrimary !important;
+  }
+
+  &-success {
+    background-color: $cGreen !important;
+  }
+
+  &-info {
+    background-color: $cTeal !important;
+  }
+
+  &-purple {
+    background-color: $cPurple !important;
+  }
+
+  &-secondary4 {
+    background-color: $cSecondary4;
+  }
+
+  &-secondary3 {
+    background-color: $cSecondary3;
+  }
+
+  &-red {
+    background-color: $accentRed;
+  }
+
+  &-grey2 {
+    background-color: $grey2;
+  }
+
+  &-grey3 {
+    background-color: $grey3;
+  }
+
+  &-grey4 {
+    background-color: $grey4;
+  }
+
+  &-grey5 {
+    background-color: $grey5;
+  }
+
+  &-shade6 {
+    background-color: $shade6;
+  }
+
+  &-black1 {
+    background-color: $black1;
+  }
+
+  &-white {
+    background-color: #fff;
+  }
+
+  &-neutralGrey {
+    background-color: $neutralGrey;
+  }
+  &-neutral6 {
+    background-color: $neutral6;
+  }
+
+  &-neutral5 {
+    background-color: $neutral5;
+  }
+
+  &-salt {
+    background-image: url("../assets/salt/a-salt.svg");
+    background-size: 100%;
+    background-position: top right;
+    background-repeat: no-repeat;
+  }
+
+  &-salts {
+    background-image: url("../assets/salt/4-salts.svg");
+    background-size: 100%;
+    background-position-y: top;
+  }
+}

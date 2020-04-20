@@ -1,0 +1,179 @@
+.btn {
+  outline: none;
+  border: none;
+  box-shadow: none;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 9.5px 20px;
+
+  background-color: #fff;
+  color: $black1;
+
+  transition: color 0.3s ease, background 0.3s ease;
+
+  &-lg {
+    padding: 12px 24px;
+  }
+
+  &-sm {
+    padding: 6px;
+  }
+
+  &-block {
+    width: 100%;
+  }
+
+  &-primary {
+    background: $cPrimary;
+    color: #fff;
+
+    &:not(:disabled):not(.disabled):hover {
+      background-color: $cSecondary2;
+    }
+  }
+
+  &-violet {
+    background: $gradientViolet;
+    color: #fff;
+    opacity: 0.95;
+
+    &:not(:disabled):not(.disabled):hover {
+      opacity: 1;
+    }
+  }
+
+  &-success {
+    background: $cGreen;
+    color: #fff;
+
+    &:not(:disabled):not(.disabled):hover {
+      background-color: $cGreen2;
+    }
+  }
+
+  &-danger {
+    background: #db4343;
+    color: #fff;
+  }
+
+  &-warning {
+    background: $cYellow;
+    color: #fff;
+
+    &:not(:disabled):not(.disabled):hover {
+      background-color: $cYellow2;
+    }
+  }
+
+  &-outline {
+    color: $grey2;
+    border: 1px solid $grey2;
+    &:not(:disabled):not(.disabled):hover {
+      color: $cSecondary3;
+      border: 1px solid $cSecondary3;
+    }
+
+    &-g {
+      // border: 1px solid;
+      // background: #fff;
+
+      border: solid 1px transparent;
+      border-radius: 5px;
+      background-origin: border-box;
+      background-clip: content-box, border-box;
+      padding: 0;
+
+      &-primary {
+        background-image: linear-gradient(white, white), $gradientBlue;
+      }
+
+      &-info {
+        background-image: linear-gradient(white, white), $gradientCyan;
+      }
+
+      &-violet {
+        background-image: linear-gradient(white, white), $gradientViolet;
+        &:not(:disabled):not(.disabled):hover {
+          background: $gradientViolet;
+          span,
+          p {
+            color: #fff;
+            background-clip: initial;
+            -webkit-text-fill-color: initial;
+          }
+        }
+      }
+
+      &-purple {
+        background-image: linear-gradient(white, white), $gradientPurple;
+        &:not(:disabled):not(.disabled):hover {
+          background: $gradientPurple;
+          span,
+          p {
+            color: #fff;
+            background-clip: initial;
+            -webkit-text-fill-color: initial;
+          }
+        }
+      }
+
+      &-grey {
+        background-image: linear-gradient(white, white), $gradientGrey;
+      }
+    }
+  }
+
+  &-info {
+    background: $cTeal;
+    color: #fff;
+  }
+
+  &-g {
+    &-primary {
+      background: $gradientBlue;
+      color: #fff;
+      opacity: 0.95;
+
+      &:not(:disabled):not(.disabled):hover {
+        opacity: 1;
+      }
+    }
+    &-violet {
+      background: $gradientBlueViolet;
+      color: #fff;
+      opacity: 0.95;
+
+      &:not(:disabled):not(.disabled):hover {
+        opacity: 1;
+      }
+    }
+    &-purple {
+      background: $gradientPurple;
+      color: #fff;
+
+      opacity: 0.95;
+
+      &:not(:disabled):not(.disabled):hover {
+        opacity: 1;
+      }
+    }
+    &-info {
+      background: $gradientCyan;
+      color: #fff;
+    }
+  }
+
+  &:not(:disabled):not(.disabled) {
+    cursor: pointer;
+  }
+
+  &-group {
+    display: flex;
+    flex-direction: row;
+    > .btn:not(:first-child) {
+      margin-left: 8px;
+    }
+  }
+}

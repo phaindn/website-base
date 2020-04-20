@@ -1,0 +1,26 @@
+doctype html
+html(lang="en" class="no-js")
+	head
+		block page-seo
+		include partials/metadatas.pug
+		block plus-metadata
+
+		//- link(rel="manifest" href="site.webmanifest")
+		link(rel="apple-touch-icon" href="/favicon.png")
+		link(rel="shortcut icon" href="/favicon.png" type="image/x-icon")
+
+
+		include partials/helpers/styles.pug
+		block plus-styles
+
+	body.bg-salts
+		include partials/ie.pug
+		include partials/header.pug
+
+		main(class="container-fluild")
+			block content
+
+		include partials/footer.pug
+
+		include partials/helpers/scripts.pug
+		block plus-scripts

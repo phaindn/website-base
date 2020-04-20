@@ -1,0 +1,30 @@
+@mixin dp-xs {
+  @media (min-width: 368px) {
+    @content;
+  }
+}
+@mixin dp-sm {
+  @media (min-width: 624px) {
+    @content;
+  }
+}
+@mixin dp-md {
+  @media (min-width: 816px) {
+    @content;
+  }
+}
+@mixin dp-lg {
+  @media (min-width: 1072px) {
+    @content;
+  }
+}
+@mixin dp-mlg {
+  @media (min-width: 1328px) {
+    @content;
+  }
+}
+@mixin dp-xl {
+  @media (min-width: 1488px) {
+    @content;
+  }
+}

@@ -1,0 +1,39 @@
+.masonry {
+  column-count: 1;
+  column-gap: 24px;
+
+  &-item {
+    display: inline-block;
+    // margin: 0 0 1em;
+    margin-bottom: 24px;
+    width: 100%;
+  }
+
+  &-content {
+
+  }
+}
+
+@include dp-sm {
+  .masonry {
+    column-count: 2;
+  }
+}
+
+@include dp-md {
+  .masonry {
+    column-count: 3;
+  }
+}
+
+@include dp-lg {
+  .masonry {
+    column-count: 3;
+  }
+}
+
+@include dp-mlg {
+  .masonry {
+    column-count: 4;
+  }
+}

@@ -1,0 +1,30 @@
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $grey3;
+  border-radius: 3px;
+  transition: background 0.2s ease;
+  &:hover {
+    background: $shade5;
+  }
+}
+
+::-webkit-scrollbar-track {
+  background: #fff;
+  padding: 2px;
+  width: 10px;
+  border: 1px solid #E6E8F1;
+}
+
+:root
+{
+  --scrollbar-track-color: #fff;
+    --scrollbar-thumb-color: $grey3;
+}
+
+html
+{
+  scrollbar-color: var(--scrollbar-thumb-color) var(--scrollbar-track-color) !important;
+}

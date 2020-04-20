@@ -1,0 +1,26 @@
+#footer {
+  padding-top: 111px;
+  padding-bottom: 111px;
+  background: #fff;
+  nav>ul>li {
+    // &:not(:first-child) {
+    //   margin-top: 20px;
+    // }
+    margin-bottom: 20px;
+  }
+}
+#socials {
+  .circle {
+    $size: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: $size;
+    height: $size;
+    border-radius: 50%;
+    cursor: pointer;
+    &:not(:first-child) {
+      margin-left: 20px;
+    }
+  }
+}
